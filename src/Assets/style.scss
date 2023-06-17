@@ -1,0 +1,412 @@
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+  * {
+      font-family: 'Montserrat', sans-serif;
+      //   font-family: 'Lato', sans-serif;
+      box-sizing: border-box;
+  }
+
+  .app-content {
+      width: 100%;
+      height: 100vh;
+      box-sizing: border-box;
+      overflow-y: auto;
+      overflow-x: hidden;
+  }
+
+  .loginContainer {
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .login-side-bar {
+      width: 35%;
+      height: 100%;
+      background-color: black;
+      max-width: 600px;
+      min-width: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      h1 {
+          font-size: 75px;
+      }
+  }
+
+  .right-form-containter {
+      width: 100%;
+      height: 100%;
+      background-color: #F5F5F5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .form-header {
+      h3 {
+          font-size: 30px;
+          margin-bottom: 10px;
+      }
+
+      padding: 5px;
+      margin-bottom: 15px;
+  }
+
+  .auth {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin-bottom: 15px;
+  }
+
+  .authButton {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      background-color: white;
+      padding: 7px 14px;
+      width: 45%;
+      border-radius: 10px;
+      cursor: pointer;
+
+      img {
+          max-width: 20px;
+          margin-right: 10px;
+          margin-left: 5px;
+      }
+
+      p {
+          font-size: 13px;
+          color: #858585;
+      }
+  }
+
+  .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      background-color: white;
+      min-width: 475px;
+      min-height: 350px;
+      border-radius: 20px;
+      margin-bottom: 25px;
+  }
+
+  .email-input-label {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 25px;
+      margin-top: 10px;
+
+      input {
+          margin-top: 15px;
+          border: none;
+          background-color: #F5F5F5;
+          border-radius: 10px;
+          padding: 15px 20px;
+      }
+
+  }
+
+  .password-input-label {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 25px;
+
+      input {
+          margin-top: 15px;
+          border: none;
+          background-color: #EAEAEA;
+          border-radius: 10px;
+          padding: 15px 20px;
+      }
+
+  }
+
+  input:focus {
+      border: none;
+      outline: none;
+  }
+
+  .forgot-password-sign-in {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      color: #346BD4;
+      margin-bottom: 20px;
+
+      button {
+          cursor: pointer;
+          margin-top: 15px;
+          outline: none;
+          border: none;
+          width: 100%;
+          background-color: black;
+          color: white;
+          font-size: 17px;
+          border-radius: 10px;
+          padding: 14px;
+      }
+  }
+
+  .register-here {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .dont-have-text {
+          color: #858585;
+          margin-right: 5px;
+      }
+
+      .register-text {
+          color: #346BD4;
+      }
+  }
+
+  // ** Side menu 
+  .side-menu-header {
+      h2 {
+          font-size: 36px;
+      }
+
+      margin-bottom: 60px;
+  }
+
+  .dash-board-container {
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding: 40px;
+      display: flex;
+      align-items: center;
+      background-color: #F5F5F5;
+      //   justify-content: center;
+  }
+
+  .side-menu-container {
+      box-sizing: border-box;
+      min-width: 280px;
+      max-width: 300px;
+      height: 100%;
+      border-radius: 30px;
+      padding: 60px 50px;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      //   align-items: center;
+      color: white;
+  }
+
+  .list-item {
+      display: flex;
+      margin-bottom: 40px;
+
+      p {
+          //   font-size: 18px;
+      }
+
+      img {
+          margin-right: 20px;
+      }
+  }
+
+  .side-menu-bottom {
+      .help {
+          margin-bottom: 20px;
+      }
+  }
+
+  .dash-board-main {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      padding: 0px 30px 0px 60px;
+  }
+
+  .top-menu {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h5 {
+          font-size: 25px;
+      }
+  }
+
+  .header-options {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .search-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
+      margin-right: 30px;
+      border-radius: 12px;
+
+      input {
+          height: 100%;
+          width: 100%;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          padding: 15px 20px;
+      }
+
+      img {
+          margin-right: 18px;
+      }
+
+  }
+
+  .bell-icon {
+      margin-right: 30px;
+  }
+
+  .top-cards {
+      margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  .card {
+      min-width: 245px;
+      min-height: 140px;
+      border-radius: 20px;
+      padding: 20px 25px;
+      display: flex;
+      flex-direction: column;
+
+      .card-icon {
+          display: flex;
+          justify-content: end;
+      }
+
+      .card-name {
+          margin-bottom: 10px;
+      }
+
+      .card-number {
+          font-size: 25px;
+      }
+  }
+
+  .line-graph-containar {
+      min-height: 360px;
+      max-height: 375px;
+      width: 100%;
+      display: flex;
+      padding: 30px 40px;
+      flex-direction: column;
+      margin-top: 40px;
+      background-color: white;
+      border-radius: 20px;
+
+      .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .options {
+              display: flex;
+              align-items: center;
+
+              p {
+                  margin-right: 20px;
+                  font-size: 13px;
+              }
+          }
+
+          .date {
+              display: flex;
+              align-items: center;
+              font-size: 14px;
+              margin-top: 5px;
+          }
+      }
+
+      .line-chart {
+          width: 100%;
+      }
+  }
+
+  .pie-chart-container {
+      min-height: 310px;
+      max-height: 375px;
+      width: 45%;
+      display: flex;
+      padding: 30px 40px;
+      flex-direction: column;
+      justify-content: start;
+      margin-top: 40px;
+      background-color: white;
+      border-radius: 20px;
+      margin-bottom: 30px;
+
+      .header {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 40px;
+
+          .date {
+              display: flex;
+              align-items: center;
+          }
+      }
+  }
+
+  .dashboard-bottom-containar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .note-1 {
+      border-left: 4px solid #9BDD7C;
+      padding-left: 10px;
+      margin-bottom: 30px;
+
+      .heading {
+          font-size: 16px;
+          color: #666666;
+      }
+
+      .sub-head {
+          color: #999999;
+      }
+  }
+
+  .note-2 {
+      border-left: 4px solid #6972C3;
+      padding-left: 10px;
+
+      .heading {
+          font-size: 16px;
+          color: #666666;
+      }
+
+      .sub-head {
+          color: #999999;
+      }
+  }
